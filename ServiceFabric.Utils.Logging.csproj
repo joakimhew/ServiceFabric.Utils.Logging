@@ -5,6 +5,14 @@
     <Platforms>x64</Platforms>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net461' ">
+  	<DefineConstants>NET461</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  	<DefineConstants>NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
   	<PackageReference Include="SharpRaven" Version="2.2.0" />
