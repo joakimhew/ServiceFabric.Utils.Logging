@@ -1,7 +1,4 @@
-﻿#if NETSTANDARD2_0
-using Microsoft.Extensions.Logging;
-#endif
-
+﻿using Microsoft.Extensions.Logging;
 using SharpRaven.Data;
 using System;
 

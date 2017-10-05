@@ -1,6 +1,4 @@
-﻿#if NETSTANDARD2_0
-
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using ServiceFabric.Utils.Logging.Loggers;
 using System.Collections.Concurrent;
 
@@ -29,5 +27,3 @@ namespace ServiceFabric.Utils.Logging.LoggerProviders
         }
     }
 }
-
-#endif
