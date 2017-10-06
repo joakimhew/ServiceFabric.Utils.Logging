@@ -32,6 +32,8 @@ namespace ServiceFabric.Utils.Logging.Loggers
                 return;
             }
 
+            exception.Data.Add("context", state);
+
             _configuration.RavenClient.Capture(new SentryEvent(exception));
         }
     }
