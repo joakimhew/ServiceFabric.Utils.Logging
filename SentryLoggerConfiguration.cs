@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ServiceFabric.Utils.Logging
 {
-    public class SentryLoggerConfiguration
+    public class SentryOptions
     {
-        public IRavenClient RavenClient { get; set; }
+        public string Dsn { get; set; }
     }
 }
