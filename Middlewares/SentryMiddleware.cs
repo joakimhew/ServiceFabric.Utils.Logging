@@ -16,10 +16,10 @@ namespace ServiceFabric.Utils.Logging.Middlewares
 
         public SentryMiddleware(
             RequestDelegate next,
-            IOptions<SentryOptions> options)
+            SentryOptions options)
         {
             _next = next;
-            _options = options.Value;
+            _options = options;
         }
 
         public async Task Invoke(HttpContext context)
